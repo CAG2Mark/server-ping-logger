@@ -1,5 +1,5 @@
 # server-ping-logger
-Log and presents ping data to a list of servers for your bad ISP
+Log and presents ping data to a list of servers for your bad ISP. Only works on UNIX-like OS's for now (ie, MacOS, Linux)
 
 # How to use
 1. Create a file called `hosts.txt` in the project directory. Enter a list of hosts, separated by a line that you want to log the ping to. For example:
