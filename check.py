@@ -39,9 +39,12 @@ for host in hosts:
         sdev += diff*diff
     sdev /= cnt
     sdev **= 0.5
+    
+    i = len(data) - 1
+    while not(avg - 3*sdev < data[i][1] < avg + 3*sdev):
+        i -= 1
 
-    latest = data[-1]
-
+    latest = data[i]
 
 
     print(f"""{host} [relevant: {int(latest[1])}ms]:
